@@ -1,20 +1,21 @@
 # config valid only for current version of Capistrano
 lock '3.6.1'
 
-set :application, 'my_app_name'
-set :repo_url, 'git@example.com:me/my_repo.git'
+set :application, 'hello'
+set :repository, 'https://github.com/YumiKuwako/hello.git'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-# set :deploy_to, '/var/www/my_app_name'
+set :deploy_to, '/var/www/hello'
 
 # Default value for :scm is :git
-# set :scm, :git
+set :scm, :git
 
 # Default value for :format is :airbrussh.
-# set :format, :airbrussh
+set :format, :pretty
+set :log_level, :debug
 
 # You can configure the Airbrussh format using :format_options.
 # These are the defaults.

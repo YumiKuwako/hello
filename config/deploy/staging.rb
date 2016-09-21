@@ -49,13 +49,13 @@
 #
 # The server-based syntax can be used to override options:
 # ------------------------------------
-# server 'example.com',
-#   user: 'user_name',
+ server 'ec2-52-192-100-120.ap-northeast-1.compute.amazonaws.com',
+   user: 'root',
 #   roles: %w{web app},
-#   ssh_options: {
+   ssh_options: {
 #     user: 'user_name', # overrides user setting above
-#     keys: %w(/home/user_name/.ssh/id_rsa),
-#     forward_agent: false,
+     keys: %w(C:\Users\y.kuwako\Desktop\フィールズ関係フォルダ\秘密鍵\Fields.pem),
+     forward_agent: false,
 #     auth_methods: %w(publickey password)
 #     # password: 'please use keys'
-#   }
+   }
